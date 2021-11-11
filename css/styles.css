@@ -1,0 +1,227 @@
+.general-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+h1{
+    margin-top: 1%; 
+    color: #316EA4;
+    text-align: center;
+    text-shadow: 3px 2px 10px rgba(150, 150, 150, 1);
+}
+
+.section1{
+    grid-gap: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-container, .middle-container{
+    background-color: #F6F6F6;
+    border: 2px solid #1C6EA4;
+    border-radius: 10px;
+}
+
+.top-container{
+    margin-top: 3%; 
+    display: block;
+    width: 80%;
+    height: 35%;
+    display: grid;
+    grid-gap: 3%;
+    padding: 3%;
+}
+
+.range{
+    display: flex;
+    justify-content: space-around;
+}
+
+.range > span{
+    width: 80px;
+}
+
+.range > input{
+    width: 50%;
+}
+
+.range > div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.range > button{
+    width: 8%;
+    height: 80%;
+    padding: 0 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #1C6EA4;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px 1px #57aae0, 1px 2px 5px 1px #999;
+    margin: 0 0 0 10px;
+    border: none;
+}
+
+#range{
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-container{
+    width: 80%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    color: #1C6EA4;
+    cursor: pointer;
+}
+
+.bottom-container{
+    width: 80%;
+    background-color: #1C6EA4;
+    border: none;
+    display: block;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2{
+    grid-gap: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 > h3{
+    text-align: center;
+}
+
+#preview{
+    width: 30%;
+    height: 125px;
+    margin: 120px auto;
+    background-color: #1C6EA4;
+    color: white;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+/* Galería de efectos */
+.effect-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 2%;
+    justify-content: center;
+}
+
+.effect-gallery > div{
+    display: inline-block;
+    overflow: hidden;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #999;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.effect-gallery > div:hover{
+    border: 2px solid #444;
+}
+
+.effect-gallery > div > span{
+    display: inline-block;
+    line-height: 35px;
+    width: 70px;
+    height: 35px;
+    color: white;
+    text-shadow: 0px 1px 2px #000;
+}
+
+.hover-effect{
+    box-shadow: 0px 10px 13px -7px #000000;
+    background-color: #1C6EA4;
+}
+
+.sides-effect{
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000;
+    background-color: #1C6EA4;
+}
+
+.button-effect{
+    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E; 
+    background-color: #1C6EA4;
+}
+
+.mirrors-effect{
+    box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA;
+    background-color: #1C6EA4;
+}
+
+.inOut-effect{
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000;
+    background-color: #1C6EA4;
+}
+
+.gradient-effect{
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925;
+    background-color: #1C6EA4;
+}
+
+.pile-effect{
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF;
+    background-color: #1C6EA4;
+}
+
+.checker-effect{
+    box-shadow: 10px 0 0 #F0F0F0, 20px 0 0 #000, 30px 0 0 #F0F0F0, 0 10px 0 #F0F0F0, 10px 10px 0 #000, 20px 10px 0 #F0F0F0, 30px 10px 0 #000, 0 20px 0 #000, 10px 20px 0 #F0F0F0, 20px 20px 0 #000, 30px 20px 0 #F0F0F0, 0 30px 0 #F0F0F0, 10px 30px 0 #000, 20px 30px 0 #F0F0F0, 30px 30px 0 #000;
+    background-color: #1C6EA4;
+}
+
+.borders-effect{
+    box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D; 
+    background-color: white;
+    color: #1C6EA4; 
+}
+
+.rainbow-effect{
+    box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000; 
+    background-color: #9400D3;
+}
+
+.candy-effect{
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF;
+    background-color: #1C6EA4;
+}
+
+.flames-effect{
+    box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17;
+    background-color: #1C6EA4;
+}
+
+.candle-effect{
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px; 
+    background-color: white;
+}
+
+.well-effect{
+    box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA; 
+    background-color: #000000;
+}
+
+.pyramid-effect{
+    box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 0px 9px 0px 6px rgba(0,0,0,0.1), 0px 12px 0px 8px rgba(0,0,0,0.1), 0px 15px 0px 10px rgba(0,0,0,0.1), 0px 18px 0px 12px rgba(0,0,0,0.1), 0px 21px 0px 14px rgba(0,0,0,0.1), 0px 24px 0px 16px rgba(0,0,0,0.1), 0px 27px 0px 18px rgba(0,0,0,0.1), 0px 30px 0px 20px rgba(0,0,0,0.1); 
+    background-color: #444444;
+}
+
+.target-effect{
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000; 
+    background-color: white;
+    color: #F00; 
+}

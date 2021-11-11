@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-julyvbelio.png" type="image/x-icon">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>3.3 Control del DOM</title>
+</head>
+<body>
+    <h1>Box-Shadow CSS Generator</h1>
+    
+    <section class="general-container">
+        <section class="section1">
+            <div class="top-container">
+                <div class="range">
+                    <span>Shift right:</span><button id="shiftRightButton">0</button>
+                    <input type="range" min="-50" max="50" value="0" class="form-range" id="shiftRightInput">
+                </div>
+                <div class="range">
+                    <span>Shift down:</span><button id="shiftDownButton">0</button>
+                    <input type="range" min="-50" max="50" value="0" class="form-range" id="shiftDownInput">
+                </div>
+                <div class="range">
+                    <span>Blur:</span><button id="blurButton">0</button>
+                    <input type="range" min="0" max="50" value="0" class="form-range" id="blurInput">
+                </div>
+                <div class="range">
+                    <span>Spread:</span><button id="spreadButton">0</button>
+                    <input type="range" min="-50" max="50" value="0" class="form-range" id="spreadInput">
+                </div>
+                <div class="range">
+                    <span>Opacity:</span><button id="opacityButton">1</button>
+                    <input type="range" min="0" max="1" value="1" step="0.01" class="form-range" id="opacityInput">
+                </div>    
+                <div id="range">
+                    <div>
+                        <label for="inset">Inset:</label>
+                        <input type="checkbox" id="inset">
+                    </div>
+                    
+                    <div>
+                        <label for="pickerColor">Color:</label>
+                        <input type="color" id="pickerColor">  
+                    </div>
+                </div>
+            </div>
+    
+            <div class="middle-container">
+                <i class="fas fa-plus-circle fa-2x icon"></i>
+            </div>
+            
+            <div class="bottom-container">
+                <textarea id="textArea" cols="48" rows="4"></textarea>
+            </div>
+        </section>
+    
+        <section class="section2">
+            <div class="example">
+                <div id="preview">Preview</div>
+            </div>
+            
+            <h3>Effect Gallery</h3>
+            <div class="effect-gallery">
+                <div>
+                    <span class="hover-effect">Hover</span>
+                </div>
+                <div>
+                    <span class="sides-effect">Sides</span>
+                </div>
+                <div>
+                    <span class="button-effect">Button</span>
+                </div>
+                <div>
+                    <span class="mirrors-effect">Mirrors</span>
+                </div>
+                <div>
+                    <span class="inOut-effect">In&Out</span>
+                </div>
+                <div>
+                    <span class="gradient-effect">Gradient</span>
+                </div>
+                <div>
+                    <span class="pile-effect">Pile</span>
+                </div>
+                <div>
+                    <span class="checker-effect">Checker</span>
+                </div>
+                <div>
+                    <span class="borders-effect">Borders</span>
+                </div>
+                <div>
+                    <span class="rainbow-effect">Rainbow</span>
+                </div>
+                <div>
+                    <span class="candy-effect">Candy</span>
+                </div>
+                <div>
+                    <span class="flames-effect">Flames</span>
+                </div>
+                <div>
+                    <span class="candle-effect">Candle</span>
+                </div>
+                <div>
+                    <span class="well-effect">Well</span>
+                </div>
+                <div>
+                    <span class="pyramid-effect">Pyramid</span>
+                </div>
+                <div>
+                    <span class="target-effect">Target</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!-- CLIPBOARD.JS -->
+    <script src="dist/clipboard.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
